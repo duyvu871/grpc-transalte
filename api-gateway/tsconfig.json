@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es6"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "rootDir": "./",
+    "outDir": "./build",
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "@/*": ["src/*"],
+      "services/*": ["src/services/*"],
+      "webhooks/*": ["src/webhooks/*"],
+      "utils/*": ["src/utils/*"],
+      "configs/*": ["src/configs/*"],
+      "models/*": ["src/models/*"],
+      "types/*": ["src/types/*"],
+      "client/*": ["client/*"],
+      "protobuf/*": ["protobuf/*"],
+    }
+  },
+    "include": ["src/**/*.ts", "src/**/*.js"],
+    "exclude": ["node_modules"]
+}

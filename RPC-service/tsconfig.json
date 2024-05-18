@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "lib": [
+      "es6"
+    ],
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "outDir": "./build",
+    "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "rpc-service/*": ["./*"],
+      "translation-service/*": ["./server/services/Translation/*"],
+    }
+  },
+    "include": ["server/**/*.ts", "proto/**/*.ts", "protobuf/**/*.ts"],
+    "exclude": ["node_modules"]
+}

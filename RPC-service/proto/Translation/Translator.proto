@@ -1,0 +1,36 @@
+syntax = "proto3";
+
+//service TranslationService {
+//    rpc Translate(TranslateRequest) returns (TranslateResponse);
+//    rpc DetectLanguage(DetectLanguageRequest) returns (DetectLanguageResponse);
+//}
+message TranslateRequest {
+    string text = 1;
+    string source_language = 2;
+    string target_language = 3;
+}
+
+message TranslateResponse {
+   Translation translation = 1;
+   string message = 2;
+}
+
+message Translation {
+    string translated_text = 1;
+    string source_language = 2;
+    string target_language = 3;
+}
+
+message DetectLanguageRequest {
+    string text = 1;
+}
+
+message DetectLanguageResponse {
+    string detected_language = 1;
+    float confidence_score = 2;
+}
+
+message GenericResponse {
+    int32 status = 1;
+    string message = 2;
+}

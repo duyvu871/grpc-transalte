@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "Translation/Translator.proto";
+
+service TranslationService {
+  rpc Translate (TranslateRequest) returns (TranslateResponse);
+}
+
+message ServiceError {
+  int32 code = 1; // custom error code
+  string message = 2; // error message
+}
