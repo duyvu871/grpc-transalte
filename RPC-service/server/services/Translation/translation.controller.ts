@@ -1,8 +1,8 @@
 import TranslateService from 'translation-service/translation.service';
 import grpc from "@grpc/grpc-js";
-import {TranslateRequest} from "rpc-service/protobuf/Translation/TranslateRequest";
-import {TranslateResponse} from "rpc-service/protobuf/Translation/TranslateResponse";
-import {GenericResponse} from "../../../protobuf/Translation/GenericResponse";
+import {TranslateRequest} from "rpc-service/protobuf/translator/TranslateRequest" //"rpc-service/protobuf/Translation/TranslateRequest";
+import {TranslateResponse} from "rpc-service/protobuf/translator/TranslateResponse"//"rpc-service/protobuf/Translation/TranslateResponse";
+// import {GenericResponse} from "../../../protobuf/Translation/GenericResponse";
 import {ISOLangType} from "./utils/isoLanguage";
 import {LanguageNameType} from "./utils/languageNames";
 import {Status} from "@grpc/grpc-js/build/src/constants";

@@ -9,7 +9,7 @@
     ],
     "forceConsistentCasingInFileNames": true,
     "moduleResolution": "node",
-    "rootDir": "./",
+//    "rootDir": "./",
     "outDir": "./build",
     "experimentalDecorators": true /* Enables experimental support for ES7 decorators. */,
     "allowJs": true,

@@ -1,4 +1,4 @@
-// Original file: RPC-service/proto/Translation/Translator.proto
+// Original file: proto/Translator.proto
 
 
 export interface Translation {

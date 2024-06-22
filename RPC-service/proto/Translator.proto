@@ -1,9 +1,7 @@
 syntax = "proto3";
 
-//service TranslationService {
-//    rpc Translate(TranslateRequest) returns (TranslateResponse);
-//    rpc DetectLanguage(DetectLanguageRequest) returns (DetectLanguageResponse);
-//}
+package translator;
+
 message TranslateRequest {
     string text = 1;
     string source_language = 2;

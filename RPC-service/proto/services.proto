@@ -1,9 +1,14 @@
 syntax = "proto3";
 
-import "Translation/Translator.proto";
+import "Translator.proto";
+import "Gemini.proto";
 
 service TranslationService {
-  rpc Translate (TranslateRequest) returns (TranslateResponse);
+  rpc Translate (translator.TranslateRequest) returns (translator.TranslateResponse);
+}
+
+service ChatbotService {
+  rpc SendMessage (chatbot.SendMessageRequest) returns (chatbot.SendMessageResponse);
 }
 
 message ServiceError {

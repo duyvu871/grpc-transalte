@@ -5,6 +5,7 @@ import { GoogleTranslatorController } from '@/controllers/google-translator.cont
 export function LoadRoutes({ app }: {
     app: Express;
 }) {
-    app.get('/test', RouteRequestTestController.test);
-    app.post('/translate', GoogleTranslatorController.translate);
+    app.get('/api/v1/test', RouteRequestTestController.test);
+    app.post('/api/v1/translate', GoogleTranslatorController.translate);
+
 };

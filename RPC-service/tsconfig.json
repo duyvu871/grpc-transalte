@@ -17,9 +17,11 @@
     "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
     "paths": {
       "rpc-service/*": ["./*"],
+      "orm/*": ["./server/ORM/*"],
       "translation-service/*": ["./server/services/Translation/*"],
+      "chatbot-service/*": ["./server/services/Chatbot/*"],
     }
   },
-    "include": ["server/**/*.ts", "proto/**/*.ts", "protobuf/**/*.ts"],
+    "include": ["server/**/*.ts", "proto/**/*.ts", "protobuf/**/*.ts", "**/*.d.ts"],
     "exclude": ["node_modules"]
 }

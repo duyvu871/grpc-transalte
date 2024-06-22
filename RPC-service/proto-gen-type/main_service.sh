@@ -1,0 +1,1 @@
+yarn proto-loader-gen-types --longs=String --enums=String --defaults --keepCase --oneofs --grpcLib=@grpc/grpc-js --outDir=protobuf proto/services.proto

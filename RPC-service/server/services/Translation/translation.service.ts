@@ -19,7 +19,7 @@ export type TranslateOptions = {
 }
 
 export default class TranslateService {
-    private cache: typeof Cache;
+    private readonly cache: typeof Cache;
     private key: string;
     private keys: TranslateOptions['keys'];
     private languages: (name: string) => TranslateOptions['from' | 'to'];

@@ -1,4 +1,5 @@
 import mongoose, { ConnectOptions } from 'mongoose';
+import * as process from "node:process";
 
 if (!process.env.MONGODB_URI) {
     throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
@@ -23,5 +24,9 @@ if (IS_DEVELOPMENT) {
 } else {
     clientPromise = mongoose.connect(uri, options);
 }
+
+process.on('exit', () => {
+    clientPromise.then(client => client.disconnect());
+})
 
 export default clientPromise;

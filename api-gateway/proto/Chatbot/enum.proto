@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package chatbot_enums;
+
+enum Role {
+    USER = 0;
+    ASSISTANT = 1;
+}

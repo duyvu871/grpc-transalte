@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package chatbot;
+
+import "google/protobuf/timestamp.proto";
+import "Chatbot/enum.proto";
+
+message UserContext {
+    string user_id = 1;
+}
+
+message SendMessageResponse {
+    string id = 1;
+    string message = 2;
+    chatbot_enums.Role role = 3;
+    google.protobuf.Timestamp created_at = 4;
+    google.protobuf.Timestamp updated_at = 5;
+}
+
+message SendMessageRequest {
+    string id = 1;
+    string message = 2;
+    string section_id = 3;
+}
+
+
+
